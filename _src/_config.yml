@@ -1,0 +1,32 @@
+name: Technically Good
+markdown: redcarpet
+pygments: true
+paginate: 8
+description:     Writing about my job and its product in English and Japanese
+intro: Technically Good 
+logo:             logo.png
+disqus_shortname:
+# url: http://gotchacode.com
+#Comment out url when working locally to resolve base urls correctly
+#url:
+
+# Owner/author information
+owner:
+  name:           Jim Borden
+  avatar:         "https://s.gravatar.com/avatar/ab881b60afc75f5936aa2dbdb3f54ae2?s=80"
+  email:          jim.borden@couchbase.com
+  # Social networking links used in footer. Update and remove as you like.
+  twitter:  borrrden
+  github: borrrden
+  stackexchange: borrrden
+  # For Google Authorship https://plus.google.com/authorship
+  google_plus:
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# Links to include in top navigation
+# For external links add external: true
