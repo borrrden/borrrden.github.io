@@ -73,8 +73,8 @@ doc.PutProperties(props);
 <p>If you just need to change things all at once (fire and forget) then you can make use of the <code>Document.Update()</code> method.  It will take care of created a new <code>UnsavedRevision</code> for you, which is just a placeholder that is not saved back to the <code>Database</code> until its <code>Save()</code> method is called. The argument for <code>Update()</code> is an <code>UpdateDelegate</code> function.  It is a function that takes one argument, an <code>UnsavedRevision</code>, and returns a <code>bool</code> indicating whether or not this revision should be saved or discarded.  Upon entry, the <code>UnsavedRevision</code> will contain identical properties to the current <code>Revision</code> of the <code>Document</code>.</p>
 <div class="highlight"><pre><code class="language-text" data-lang="text">doc.Update((UnsavedRevision rev) =&gt; 
 {
-    //rev.UserProperties will contain the two previous vals
-    rev.UserProperties[&quot;myProperty&quot;] = &quot;myOtherValue&quot;;
+    //rev.Properties will contain the two previous vals
+    rev.Properties[&quot;myProperty&quot;] = &quot;myOtherValue&quot;;
     return true; //This will cause the revision to be saved
 });
 </code></pre></div>
